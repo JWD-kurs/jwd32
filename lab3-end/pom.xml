@@ -7,8 +7,8 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.2.7.RELEASE</version>
 	</parent>
-	<artifactId>lab3-begin</artifactId>
-	<packaging>war</packaging>
+	<artifactId>lab3-end</artifactId>
+	<packaging>jar</packaging>
 	<name>WAFEPA</name>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>

@@ -4,7 +4,6 @@ import java.util.List;
 
 import jwd.wafepa.model.Activity;
 import jwd.wafepa.service.impl.InMemoryActivityService;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
