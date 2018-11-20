@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="P1a_first_module_controller_scope.js"></script>
+	</head>
+	<body ng-app="first_contact">
+		<div ng-controller="firstController">
+		
+			<h1>Angular - direktiva za ispis kolekcije (niza)</h1>
+			
+				<table border="1">
+					<tr>
+						<td>Ime</td>
+						<td>Prezime</td>
+					</tr>
+					<tr ng-repeat="x in people">
+						<td>{{x.name}}</td>
+						<td>{{x.surname}}</td>					
+					</tr>
+				</table>
+			
+			
+			<h1>Direktiva za reagovanje na klik</h1>
+			Unesite ime: <input ng-model="newName" name="name" type="text"/>
+			Unesite prezime: <input ng-model="newSurname" name="surname" type="text"/>
+			<button ng-click="addPerson()" type="button">Dodaj korisnika!</button>
+		
+		</div>
+	</body>
+</html>

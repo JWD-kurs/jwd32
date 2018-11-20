@@ -1,0 +1,2 @@
+Primer u kojem je uvedena direktiva ng-disabled, koja po potrebi onemogućava klik na dugme.
+Ne mora biti primenjena samo na dugme, može i na input polje, na unose uopšteno.

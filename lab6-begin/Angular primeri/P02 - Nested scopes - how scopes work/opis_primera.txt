@@ -1,0 +1,12 @@
+Konačno, kruna naše dosadašnje priče o skoupovima!
+Tu je pokazano da su scope-ovi u međusobnoj vezi.
+
+Kada u okviru područja važenja prvog (roditeljskog/parent) kontrolera (tag pod ng-controller="firstController")
+definišemo drugi (dete/child) kontroler (tag pod ng-controller="secondController"), scope drugog kontrolera
+će biti uvezan na scope prvog. 
+
+Kao što je moguće videti kada se pokrene primer, pošto promenljiva surname ne postoji u scope-u
+drugog kontrolera, angular će potražiti vrednost u scope-u onog nad njim, i naći će je! Tako
+Marko bez prezimena postaje Marko Marić! Međutim, ako mi ukucamo u input polje u području bliže 
+definiciji drugog kontrolera neko prezime, ng-model direktiva će napraviti surname za Marka u
+scope-u drugog (child/dete) kontrolera.

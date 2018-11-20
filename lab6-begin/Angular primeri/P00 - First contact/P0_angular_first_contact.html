@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<h1>Angular - first contact</h1>
+		Unesite ime: <input type="text" ng-model="name" />
+		<h2>Ispis</h2>
+		<p>Ime ispisano pomoću notacije sa zagradama: {{name}}</p>
+		<p>Ime ispisano pomoću ng-bind direktive: <span ng-bind="name"></span></p>
+	</body>
+</html>

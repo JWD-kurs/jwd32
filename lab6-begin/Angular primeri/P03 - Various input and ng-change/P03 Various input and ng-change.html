@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="angular.min.js"></script>
+		<script src="P03_module_controller_scope.js"></script>
+	</head>
+	<body ng-app="example">
+		<div ng-controller="ExampleController">
+			
+			<h1>Angular - različite vrste unosa i ng-change</h1>
+				
+				<h3>Checkbox</h3>
+				<label>Checkbox:
+    					<input type="checkbox" ng-model="model.checkboxValue">
+  				</label><br/>
+				<p>Checkbox value: {{model.checkboxValue}}</p>
+
+				<h3>Radio button</h3>
+				<form>
+				  <label>
+				    <input type="radio" ng-model="model.radioValue" value="red">
+				    Red
+				  </label><br/>
+				  <label>
+				    <input type="radio" ng-model="model.radioValue" value="green">
+				    Green
+				  </label><br/>
+				  <label>
+				    <input type="radio" ng-model="model.radioValue" value="blue">
+				    Blue
+				  </label><br/>
+				</form>
+				<p>Radio button value: {{model.radioValue}}</p>
+				
+				<h3>Number</h3>
+				<label>Number:
+    					<input type="number" name="input" ng-model="model.numberValue"
+           				min="0" max="99" ng-change="printType()">
+ 				</label>
+				<p>Number input value: {{model.numberValue}}</p>
+
+		</div>
+	</body>
+</html>

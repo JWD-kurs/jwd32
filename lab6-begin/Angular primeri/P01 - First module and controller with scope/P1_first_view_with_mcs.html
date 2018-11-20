@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="P1_first_module_controller_scope.js"></script>
+	</head>
+	<body ng-app="first_contact">
+		<h1>Angular - first module, controller and scope</h1>
+		<div ng-controller="firstController">
+			Unesite ime:<input type="text" ng-model="name" />
+			<h2>Ispis</h2>
+			<p>Uneto ime: {{name}}</p>
+		</div>
+	</body>
+</html>

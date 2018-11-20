@@ -1,0 +1,15 @@
+Primer u kojem je na $scope "zakačen" niz people, koji sadrži objekte tipa { name: vrednost, surname:vrednost}.
+Takve objekte smo zatim prikazali na view-u pomoću direktive ng-repeat! Ta direktiva ponavlja ispis
+dok god ima vrednosti u nizu.
+
+Zatim, u primeru je prikazana direktiva ng-click, pomoću koje izvršavamo funkciju addPerson, zakačenu
+na $scope objekat! Deo koda funkcije u kojem smo prikazali kako uzimamo unete vrednosti, koje su se pojavile
+$scope.newName i $scope.newSurname posredstvom dvosmernog uvezivanja (two-way binding):
+
+var personNew = {};
+personNew.name = $scope.newName;
+personNew.surname = $scope.newSurname;
+$scope.people.push(personNew);
+
+Odmah po dodavanju nove osobe, prikaz u tabeli se osvežio! Angular je registrovao promenu, i osvežio prikaz!
+

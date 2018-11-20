@@ -1,0 +1,15 @@
+Prvi primer prikazan na lab-u 6. 
+
+-prikazano je kako se script tagom uvodi angular u naš projekat;
+
+-prikazana je ng-app direktiva, kojom uvodimo pojam modula u naš projekat;
+
+-primer je poslužio kao uvodna priča za pojam data-binding-a, odnosno mehanizma uvezivanja podataka,
+koji angular obilato koristi. Objašnjena je ng-model direktiva, koja vezuje podatak iz pozadine (skoupa) za
+input polje, i obrnuto, što predstavlja dvosmerno uvezivanje (two-way binding); Objašnjena je i ng-bind
+direktiva koja vezuje podatak iz pozadine (skoupa) za prikaz u paragrafu <p>, ali ne i obrnuto, što 
+predstavlja jednosmerno uvezivanje (one-way binding).
+
+-prikazana notacija za evaluaciju sa {{ }}, i ukazano je da se sadržaj unutar ovih vitičastih zagrada
+evaluira, tako da može pisati i {{1+1}}, pri čemu će ispis biti 2; u primeru smo pomoću ove notacije 
+ispisali promenljivu name, koja se stvorila u pozadini (na skoupu) unosom u input polje.
