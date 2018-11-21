@@ -1,0 +1,13 @@
+Primer koji prikazuje da modul i kontroler možemo pisati i u različitim datotekama.
+
+Primer koji pokazuje bitnu!! činjenicu, da mi možemo imati više istih/različitih kontrolera,
+od kojih će svaki imati svoj $scope!!! Kada se promenljiva boss promeni u $scope jednog kontrolera,
+ne menja se u drugima!
+
+ng-click=" boss = !boss" -> Dakle, pod navodnicima ne mora biti samo poziv funkcije, već neki izraz.
+
+Zatim, na primeru su pokazane direktive:
+ng-if -> uklanja(!) ili ispisuje deo html-a u zavisnosti da li je izraz pod navodnicima true ili false
+
+ng-show -> sakriva(!) ili prikazuje deo html-a  u zavisnosti da li je izraz pod navodnicima true ili false
+ng-hide -> isto kao ng-show, samo obrnuto

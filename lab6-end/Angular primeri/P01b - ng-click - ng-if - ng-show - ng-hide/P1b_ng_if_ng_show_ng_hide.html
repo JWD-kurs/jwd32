@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="P1b_first_module_controller_scope.js"></script>
+	</head>
+	<body ng-app="first_contact">
+		<h1>Angular - ng-if - uklanjanje iz html-a</h1>
+		<div ng-controller="firstController">
+			<table border="1">
+				<tr>
+					<td>Ime</td>
+					<td>Prezime</td>
+					<td ng-if="boss">Plata</td>
+				</tr>
+				<tr ng-repeat="x in people">
+						<td>{{x.name}}</td>
+						<td>{{x.surname}}</td>
+						<td ng-if="boss">{{x.earnings}}</td>						
+				</tr>
+			</table>
+			
+			<button ng-click="boss = !boss" type="button">Pritisni!</button>
+		</div>
+		
+		<h1>Angular - ng-show - sakrivanje html-a</h1>
+		<div ng-controller="firstController">
+			<table border="1">
+				<tr>
+					<td>Ime</td>
+					<td>Prezime</td>
+					<td ng-show="boss">Plata</td>
+				</tr>
+				<tr ng-repeat="x in people">
+						<td>{{x.name}}</td>
+						<td>{{x.surname}}</td>
+						<td ng-show="boss">{{x.earnings}}</td>						
+				</tr>
+			</table>
+			
+			<button ng-click="boss = !boss" type="button">Pritisni!</button>
+		</div>
+		
+		<h1>Angular - ng-hide - sakrivanje html-a</h1>
+		<div ng-controller="firstController">
+			<table border="1">
+				<tr>
+					<td>Ime</td>
+					<td>Prezime</td>
+					<td ng-hide="boss">Plata</td>
+				</tr>
+				<tr ng-repeat="x in people">
+						<td>{{x.name}}</td>
+						<td>{{x.surname}}</td>
+						<td ng-hide="boss">{{x.earnings}}</td>						
+				</tr>
+			</table>
+			
+			<button ng-click="boss = !boss" type="button">Pritisni!</button>
+		</div>
+	</body>
+</html>

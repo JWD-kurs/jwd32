@@ -1,0 +1,29 @@
+Primer u kojem je prikazano kako pravimo modul:
+						
+angular.module("first_contact", []); //Poziv ove metode nam vraća modul, koji možemo dodeliti promenljivoj
+									 //Prvi parametar predstavlja ime novog modula
+									 //U drugi parametar- niz ćemo stavljati zavisnosti
+
+Zatim, prikazano je kako pravimo kontroler, koji predstavlja samo jednu javascript funkciju:
+angular.module("first_contact").controller("firstController", function($scope){	
+	
+	$scope.name = "Marko";
+});
+
+Prvi parametar predstavlja ime novog kontrolera, dok drugi parametar predstavlja samu funkciju
+kontrolera. Funkciji je moguće proslediti parametre, kao što je prosleđen $scope, kojeg će
+angular ubaciti mehanizmom dependancy injection-a.
+
+$scope predstavlja "lepak" između kontrolera i view-a (prikaza), preko kojega prenosimo
+podatke i funkcionalnosti na view. Tako smo u ovom primeru, na $scope "zakačili" promenljivu
+name sa vrednošću Marko, koju potom ispisujemo na prikazu.
+
+Za ispis u primeru koristimo i {{}} notaciju za evaluaciju, i ng-model direktivu.
+Kada korisnik ukuca nešto u input polje, promeniće vrednost i ove naše promenljive na 
+$scope-u, što je posledica dvosmernog uvezivanja!
+
+U html-u smo uveli naš modul pozivom ng-app="first_contact" direktive.
+U html-u smo uveli naš kontroler pozivom ng-controller="firstController" direktive.
+!Važna činjenica, i modul i kontroler važe samo pod html tagovima pod kojim su definisani!
+
+

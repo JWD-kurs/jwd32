@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="P2_module_and_controllers.js"></script>
+	</head>
+	<body ng-app="first_contact">
+		<h1>Angular - controllers with nested scope</h1>
+		<div ng-controller="firstController">
+			<h2>Ovde pocinje parent (first) controller i njegov scope</h1>
+			Unos imena:<input type="text" ng-model="name" /><br/>
+			Unos prezimena:<input type="text" ng-model="surname" />
+			<h3>Ime i prezime na scope-u</h3>
+			<p>Ime: {{name}}</p>
+			<p>Prezime: {{surname}}</p>
+			
+			<div ng-controller="secondController">
+				<h2>Ovde pocinje child (second) controller i njegov scope</h1>
+				Unos imena:<input type="text" ng-model="name" /><br/>
+				Unos prezimena:<input type="text" ng-model="surname" />
+				<h3>Ime i prezime na scope-u</h3>
+				<p>Ime: {{name}}</p>
+				<p>Prezime: {{surname}}</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+Dakle, u ovom folderu se nalaze primeri koje smo radili na lab-6. Za svaki od primera sam okačio
+objašnjenje (pogledajte foldere)!
+
+Koncepti koje smo upoznali:
+-modul (module) - angular aplikacija je podeljena na module, kojih može biti i više!
+-direktive (directives) - "Markeri" kojima utičemo na html/view/prikaz.
+-kontroleri (controllers) - Funkcija koja utiče na skoup (scope/$scope).
+-skoup (scope) - "Lepak" između prikaza i kontrolera. Tu se nalaze podaci koji se prikazuju na
+view-u (prikazu), i funkcionalnosti koje utiču na prikaz podataka!
+

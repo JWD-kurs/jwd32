@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="P1c_first_module.js"></script>
+		<script src="P1c_first_controller_scope.js"></script>
+	</head>
+	<body ng-app="first_contact">
+		<div ng-controller="firstController">
+		
+			<h1>Angular - direktiva za ispis kolekcije (niza)</h1>
+			
+				<table border="1">
+					<tr>
+						<td>Ime</td>
+						<td>Prezime</td>
+					</tr>
+					<tr ng-repeat="x in people">
+						<td>{{x.name}}</td>
+						<td>{{x.surname}}</td>						
+					</tr>
+				</table>
+			
+			
+			<h1>Direktiva za reagovanje na klik</h1>
+			
+			Unesite ime: <input ng-model="newName" name="name" type="text"/><br/>
+			Unesite prezime: <input ng-model="newSurname" name="surname" type="text"/><br/>
+			Dugme koje onemogućujemo <button  ng-disabled="allowShift" ng-click="addPerson()" type="button">Dodaj korisnika!</button>
+			
+			<br/>
+			<button ng-click="allowShift = !allowShift" type="button">Dozvoli unos korisnika!</button>
+		
+		</div>
+	</body>
+</html>
