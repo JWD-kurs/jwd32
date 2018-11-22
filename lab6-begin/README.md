@@ -119,7 +119,7 @@ U AngularJS, rutiranje je omogućeno kroz servis $routeProvider, koji se nalazi 
 Prilikom rutiranja, odnosno logičkog menjanja stranica, korisnik se UVEK nalazi na istoj stranici (index.html), a sa servera se dobavljaju samo tzv. parcijalni view-ovi (*eng. partial view*),
 tj. delovi interfejsa koji su specifični za tu stranicu.
 
-* U static/app/html napraviti novi folder "partial" (ovde ćemo smeštati parcijalne view-ove), i u njega dodati dva fajla: home.html i activities.html.
+* U static/app/html  ćemo smeštati parcijalne view-ove. Tu dodati dva fajla: home.html i activities.html.
 
 * Modul za rutiranje uključiti u HTML **posle angular.js, a pre main.js fajla**.
 
@@ -139,10 +139,10 @@ var wafepaApp = angular.module('wafepaApp', ['ngRoute']);
 wafepaApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl : '/app/html/partial/home.html'
+			templateUrl : '/app/html/home.html'
 		})
 		.when('/activities', {
-			templateUrl : '/app/html/partial/activities.html'
+			templateUrl : '/app/html/activities.html'
 		})
 		.otherwise({
 			redirectTo: '/'
