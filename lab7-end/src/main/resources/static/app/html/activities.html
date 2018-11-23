@@ -1,0 +1,15 @@
+<div ng-controller="activitiesCtrl">
+	<h1>Activities</h1>
+	<br>
+	<button ng-click="goToAdd()">Add</button>
+	<br>
+	<table>
+		<tr>
+			<th>Name</th>
+		</tr>
+		<tr ng-repeat="a in activities">
+			<td>{{a.name}}</td>
+			<td><button ng-click="goToEdit(a.id)">Edit</button></td>
+		</tr>
+	</table>
+</div>
