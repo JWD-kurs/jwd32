@@ -1,0 +1,26 @@
+https://getbootstrap.com/
+https://getbootstrap.com/docs/4.0/getting-started/download/#compiled-css-and-js
+https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template
+
+https://getbootstrap.com/docs/4.0/layout/overview/#containers
+https://getbootstrap.com/docs/4.0/layout/grid/
+https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
+
+Hiding elements:
+https://getbootstrap.com/docs/4.0/utilities/display/
+https://medium.com/wdstack/bootstrap-4-hidden-visible-dd969a4c5854
+
+
+Various html elements:
+https://getbootstrap.com/docs/4.0/content/images/
+https://getbootstrap.com/docs/4.0/content/tables/
+https://getbootstrap.com/docs/4.0/components/alerts/
+https://getbootstrap.com/docs/4.0/components/buttons/
+https://getbootstrap.com/docs/4.0/components/forms/
+https://getbootstrap.com/docs/4.0/components/navbar/
+
+Free icons:
+https://fontawesome.com/v4.7.0/icons/
+
+Free themes:
+https://startbootstrap.com/

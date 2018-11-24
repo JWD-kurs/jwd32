@@ -1,0 +1,42 @@
+<div ng-controller="recordsCtrl">
+	<h1>Records</h1>
+	
+	<form>
+		<label>Time</label>
+		<input ng-model="newRecord.time"/>
+		<label>Duration</label>
+		<input ng-model="newRecord.duration"/>
+		<label>Intensity</label>
+		<input ng-model="newRecord.intensity"/>
+		<label>Description</label>
+		<input ng-model="newRecord.description"/>
+		<label>User</label>
+		<select ng-model="newRecord.userId">
+			<option ng-repeat="u in users" value="{{u.id}}">{{u.firstname}}</option>
+		</select>
+		<label>Activity</label>
+		<select ng-model="newRecord.activityId">
+			<option ng-repeat="a in activities" value="{{a.id}}">{{a.name}}</option>
+		</select>
+		
+		<button ng-click="doAdd()">Add</button>
+		
+	</form>
+	
+	<table border="1">
+		<tr>
+			<th>User</th>
+			<th>Activity</th>
+			<th>Time</th>
+			<th>Duration</th>
+			<th>Intensity</th>
+		</tr>
+		<tr ng-repeat="r in records">
+			<td>{{r.userName}}</td>
+			<td>{{r.activityName}}</td>
+			<td>{{r.time}}</td>
+			<td>{{r.duration}}</td>
+			<td>{{r.intensity}}</td>
+		</tr>
+	</table>
+</div>
