@@ -19,6 +19,8 @@ https://getbootstrap.com/docs/4.0/components/buttons/
 https://getbootstrap.com/docs/4.0/components/forms/
 https://getbootstrap.com/docs/4.0/components/navbar/
 
+Free icons:
+https://fontawesome.com/v4.7.0/icons/
 
 Free themes:
 https://startbootstrap.com/
