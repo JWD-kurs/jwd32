@@ -1,0 +1,68 @@
+<div ng-controller="recordsCtrl">
+	<h1>Records</h1>
+	
+	<div class="row">
+		
+		<div class="col-12 col-lg-6">
+		
+			<form>
+				<div class="form-group">
+					<label for="time">Time</label>
+					<input id="time" class="form-control" ng-model="newRecord.time"/>
+				</div>
+				
+				<div class="form-group">
+					<label>Duration</label>
+					<input class="form-control" ng-model="newRecord.duration"/>
+				</div>
+				
+				<div class="form-group">
+					<label>Intensity</label>
+					<input class="form-control" ng-model="newRecord.intensity"/>
+				</div>
+				
+				<div class="form-group">
+					<label>User</label>
+					<select class="form-control" ng-model="newRecord.userId">
+						<option ng-repeat="u in users" value="{{u.id}}">{{u.firstname}}</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label>Activity</label>
+					<select class="form-control" ng-model="newRecord.activityId">
+						<option ng-repeat="a in activities" value="{{a.id}}">{{a.name}}</option>
+					</select>
+				</div>
+				
+				
+				<button class="btn btn-primary" ng-click="doAdd()">Add</button>
+				
+			</form>
+		
+		</div>
+		
+		<div class="col-12 col-lg-6">
+			<table class="table table-bordered table-striped">
+				<thead class="thead-dark">
+					<tr>
+						<th>User</th>
+						<th>Activity</th>
+						<th>Time</th>
+						<th>Duration</th>
+						<th>Intensity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="r in records">
+						<td>{{r.userName}}</td>
+						<td>{{r.activityName}}</td>
+						<td>{{r.time}}</td>
+						<td>{{r.duration}}</td>
+						<td>{{r.intensity}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
