@@ -1,0 +1,35 @@
+<div ng-controller="editRecordCtrl">
+	<form>
+		<div class="form-group">
+			<label>Time</label>
+			<input class="form-control" ng-model="record.time" />
+		</div>
+		
+		<div class="form-group">
+			<label>Duration</label>
+			<input class="form-control" ng-model="record.duration"/>
+		</div>
+		
+		<div class="form-group">
+			<label>Intensity</label>
+			<input class="form-control" ng-model="record.intensity"/>
+		</div>
+		
+		<div class="form-group">
+			<label>User</label>
+			<select class="form-control" ng-model="record.userId">
+				<option ng-repeat="u in users" value="{{u.id}}" ng-selected="u.id == record.userId">{{u.firstname}}</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label>Activity</label>
+			<select class="form-control" ng-model="record.activityId">
+				<option ng-repeat="a in activities" value="{{a.id}}" ng-selected="a.id == record.activityId">{{a.name}}</option>
+			</select>
+		</div>
+		
+		<button class="btn btn-secondary" ng-click="doEdit()">Edit</button>
+	</form>
+
+</div>
