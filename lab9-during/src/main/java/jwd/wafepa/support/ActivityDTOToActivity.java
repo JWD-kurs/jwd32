@@ -3,6 +3,7 @@ package jwd.wafepa.support;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import jwd.wafepa.web.dto.ActivityDTO;
 public class ActivityDTOToActivity 
 	implements Converter<ActivityDTO, Activity> {
 	
-	//@Autowired
+	@Autowired
 	ActivityService activityService;
 
 	@Override
